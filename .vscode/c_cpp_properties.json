@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/app/inc",
+            ],
+            "defines": [
+                "STM32F1",
+                "__ARM_ARCH_7M__"
+            ],
+            "compilerPath": "${workspaceFolder}/tools/CC/gcc-10.3/bin/arm-none-eabi-gcc",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/bin/STM32F103C6_APP.elf",
+            "name": "ST-Debug_BL",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "STM32F103",
+            "interface": "swd",
+            "runToEntryPoint": "Reset_Handler",
+            "showDevDebugOutput": "none",
+            "servertype": "stlink",
+            "svdFile": "${workspaceFolder}/tools/STM32F103.svd"
+        }
+    ]
+}
