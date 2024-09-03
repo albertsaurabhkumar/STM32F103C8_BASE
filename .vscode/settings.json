@@ -32,9 +32,13 @@
         "usart.h": "c",
         "usart_common_f124.h": "c",
         "usart_common_v2.h": "c",
-        "usart_common_all.h": "c"
+        "usart_common_all.h": "c",
+        "sas_gpio.h": "c"
     },
     "cortex-debug.liveWatchRefreshRate": 250,
+    "cortex-debug.openocdPath.windows": "${workspaceFolder}/tools/openocd/bin/openocd.exe",
+    "cortex-debug.stlinkPath.windows": "C:/Program Files (x86)/STMicroelectronics/stlink_server",
+    "cortex-debug.stutilPath.windows": "${workspaceFolder}/tools/stlink/bin/st-trace.exe",
     "cortex-debug.JLinkGDBServerPath.windows": "C:/Program Files/SEGGER/JLink_V796i/JLinkGDBServerCL.exe",
     "cortex-debug.armToolchainPath.windows": "${workspaceFolder}/tools/CC/gcc-10.3/bin",
     "cortex-debug.variableUseNaturalFormat": false,

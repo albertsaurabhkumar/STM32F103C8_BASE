@@ -1,0 +1,627 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/main.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_adc.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_adc.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_can.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_can.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_clock.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_clock.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_dac.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_dac.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_gpio.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_init.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_init.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_interrupt.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_startup.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_startup.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_uart.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_uart.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .group         0x00000000        0xc ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000      0xa60 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x8e ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x51 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000      0x103 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x6a ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000      0x1df ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x1c ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0xbd ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000      0xd23 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000     0xde75 ../build/obj/src/sas_wdg.o
+ .debug_macro   0x00000000       0x22 ../build/obj/src/sas_wdg.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+VECTAB           0x08000000         0x00000110         xr
+FLASH            0x08000110         0x0000feef         xr
+SRAM             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../build/obj/src/main.o
+LOAD ../build/obj/src/sas_adc.o
+LOAD ../build/obj/src/sas_can.o
+LOAD ../build/obj/src/sas_clock.o
+LOAD ../build/obj/src/sas_dac.o
+LOAD ../build/obj/src/sas_gpio.o
+LOAD ../build/obj/src/sas_init.o
+LOAD ../build/obj/src/sas_interrupt.o
+LOAD ../build/obj/src/sas_startup.o
+LOAD ../build/obj/src/sas_uart.o
+LOAD ../build/obj/src/sas_wdg.o
+
+.intvec         0x08000000      0x10c
+                0x08000000                _intvec_start_ = .
+ *(.intvec)
+ .intvec        0x08000000      0x10c ../build/obj/src/sas_interrupt.o
+                0x08000000                vectorTable
+                0x0800010c                . = ALIGN (0x4)
+                0x0800010c                _intvec_end_ = .
+
+.text           0x08000110      0x7a8
+                0x08000110                _stext = .
+ *(.text)
+ .text          0x08000110       0xc4 ../build/obj/src/main.o
+                0x08000110                delay
+                0x0800013c                JumpToApp
+                0x0800017c                main
+ .text          0x080001d4        0x0 ../build/obj/src/sas_adc.o
+ .text          0x080001d4      0x140 ../build/obj/src/sas_can.o
+                0x080001d4                sas_can_init
+                0x08000248                sas_can_startStop
+                0x08000256                sas_set_can_mode
+                0x08000284                sas_can_config
+                0x080002c8                sas_get_can_status
+                0x080002dc                sas_can_fiter_conf
+                0x080002ea                sas_canWrite
+                0x080002fe                sas_canRead
+ .text          0x08000314      0x168 ../build/obj/src/sas_clock.o
+                0x08000314                sas_clock_init
+                0x08000354                sas_clock_set
+                0x08000414                sas_peri_clock_enable
+ .text          0x0800047c        0x0 ../build/obj/src/sas_dac.o
+ .text          0x0800047c      0x2f8 ../build/obj/src/sas_gpio.o
+                0x0800047c                config_gpio_pin
+                0x080004b8                read_pin
+                0x080004f4                write_pin
+                0x0800052c                sas_read_pin
+                0x08000574                sas_write_pin
+                0x080005c0                sas_read_port
+                0x080005d8                sas_write_port
+                0x080005f0                sas_configure_pin
+                0x0800075c                sas_configure_port
+ .text          0x08000774       0x34 ../build/obj/src/sas_init.o
+                0x08000774                sysinit
+ .text          0x080007a8       0x3c ../build/obj/src/sas_interrupt.o
+                0x080007a8                RTC_Alarm_IRQHandler
+                0x080007a8                EXTI2_IRQHandler
+                0x080007a8                I2C1_ER_IRQHandler
+                0x080007a8                TIM1_CC_IRQHandler
+                0x080007a8                USART1_IRQHandler
+                0x080007a8                FLASH_IRQHandler
+                0x080007a8                PVD_IRQHandler
+                0x080007a8                CAN1_SCE_IRQHandler
+                0x080007a8                DMA1_Channel2_IRQHandler
+                0x080007a8                EXTI3_IRQHandler
+                0x080007a8                EXTI0_IRQHandler
+                0x080007a8                USART2_IRQHandler
+                0x080007a8                ADC1_2_IRQHandler
+                0x080007a8                SPI1_IRQHandler
+                0x080007a8                TAMPER_IRQHandler
+                0x080007a8                DMA1_Channel4_IRQHandler
+                0x080007a8                DefaultHandler
+                0x080007a8                RTC_IRQHandler
+                0x080007a8                DMA1_Channel7_IRQHandler
+                0x080007a8                CAN1_RX1_IRQHandler
+                0x080007a8                I2C1_EV_IRQHandler
+                0x080007a8                DMA1_Channel6_IRQHandler
+                0x080007a8                TIM3_IRQHandler
+                0x080007a8                RCC_IRQHandler
+                0x080007a8                TIM1_TRG_COM_IRQHandler
+                0x080007a8                DMA1_Channel1_IRQHandler
+                0x080007a8                EXTI15_10_IRQHandler
+                0x080007a8                EXTI9_5_IRQHandler
+                0x080007a8                EXTI1_IRQHandler
+                0x080007a8                TIM1_BRK_IRQHandler
+                0x080007a8                DMA1_Channel5_IRQHandler
+                0x080007a8                EXTI4_IRQHandler
+                0x080007a8                USB_LP_CAN1_RX0_IRQHandler
+                0x080007a8                USB_HP_CAN1_TX_IRQHandler
+                0x080007a8                DMA1_Channel3_IRQHandler
+                0x080007a8                TIM1_UP_IRQHandler
+                0x080007a8                WWDG_IRQHandler
+                0x080007a8                TIM2_IRQHandler
+                0x080007a8                USBWakeUp_IRQHandler
+                0x080007ae                NMI_Handler
+                0x080007b4                HardFault_Handler
+                0x080007ba                MemManage_Handler
+                0x080007c0                BusFault_Handler
+                0x080007c6                UsageFault_Handler
+                0x080007cc                SVC_Handler
+                0x080007d2                DebugMon_Handler
+                0x080007d8                PendSV_Handler
+                0x080007de                SysTick_Handler
+ .text          0x080007e4       0x78 ../build/obj/src/sas_startup.o
+                0x080007e4                Reset_Handler
+                0x080007f4                initDataNbss
+ .text          0x0800085c        0x0 ../build/obj/src/sas_uart.o
+ .text          0x0800085c       0x1c ../build/obj/src/sas_wdg.o
+                0x0800085c                sas_serv_wdg
+                0x0800086a                sas_wdg_init
+ *(.text*)
+ *(.rodata)
+ .rodata        0x08000878       0x40 ../build/obj/src/sas_clock.o
+                0x08000878                sas_clock_config
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x080008b8        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x080008b8        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x080008b8                . = ALIGN (0x4)
+                0x080008b8                _etext = .
+
+.vfp11_veneer   0x080008b8        0x0
+ .vfp11_veneer  0x080008b8        0x0 linker stubs
+
+.v4_bx          0x080008b8        0x0
+ .v4_bx         0x080008b8        0x0 linker stubs
+
+.iplt           0x080008b8        0x0
+ .iplt          0x080008b8        0x0 ../build/obj/src/main.o
+
+.rel.dyn        0x080008b8        0x0
+ .rel.iplt      0x080008b8        0x0 ../build/obj/src/main.o
+
+.data           0x20000000        0x0 load address 0x080008b8
+                0x20000000                _sdata_ram = .
+ *(.data)
+ .data          0x20000000        0x0 ../build/obj/src/main.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_adc.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_can.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_clock.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_dac.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_gpio.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_init.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_interrupt.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_startup.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_uart.o
+ .data          0x20000000        0x0 ../build/obj/src/sas_wdg.o
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _edata_ram = .
+
+.BootAppFlags   0x20000000        0x4 load address 0x080008b8
+ .BootAppFlags  0x20000000        0x4 ../build/obj/src/main.o
+                0x20000000                BootAppFlag
+
+.igot.plt       0x20000004        0x0 load address 0x080008bc
+ .igot.plt      0x20000004        0x0 ../build/obj/src/main.o
+
+.bss            0x20000004       0x20 load address 0x080008bc
+                0x20000004                _bss_start_ = .
+ *(.bss)
+ .bss           0x20000004       0x19 ../build/obj/src/main.o
+                0x20000004                dlyCnt
+                0x20000008                counter
+                0x2000000c                timeoutVar
+                0x20000010                count
+                0x20000012                pendingData
+                0x20000014                validAppAvailble
+                0x20000018                i
+                0x2000001c                currstate
+ .bss           0x2000001d        0x0 ../build/obj/src/sas_adc.o
+ .bss           0x2000001d        0x0 ../build/obj/src/sas_can.o
+ .bss           0x2000001d        0x0 ../build/obj/src/sas_clock.o
+ .bss           0x2000001d        0x0 ../build/obj/src/sas_dac.o
+ *fill*         0x2000001d        0x3 
+ .bss           0x20000020        0x4 ../build/obj/src/sas_gpio.o
+                0x20000020                gpio
+ .bss           0x20000024        0x0 ../build/obj/src/sas_init.o
+ .bss           0x20000024        0x0 ../build/obj/src/sas_interrupt.o
+ .bss           0x20000024        0x0 ../build/obj/src/sas_startup.o
+ .bss           0x20000024        0x0 ../build/obj/src/sas_uart.o
+ .bss           0x20000024        0x0 ../build/obj/src/sas_wdg.o
+ *(.bss*)
+ *(.common)
+ *(.common*)
+                0x20000024                . = ALIGN (0x4)
+                0x20000024                _bss_end_ = .
+OUTPUT(../build/bin/STM32F103C8_BASE.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x1901
+ .debug_info    0x00000000      0x3ba ../build/obj/src/main.o
+ .debug_info    0x000003ba       0x68 ../build/obj/src/sas_adc.o
+ .debug_info    0x00000422      0x7ba ../build/obj/src/sas_can.o
+ .debug_info    0x00000bdc      0x2f4 ../build/obj/src/sas_clock.o
+ .debug_info    0x00000ed0       0x68 ../build/obj/src/sas_dac.o
+ .debug_info    0x00000f38      0x53f ../build/obj/src/sas_gpio.o
+ .debug_info    0x00001477       0xb3 ../build/obj/src/sas_init.o
+ .debug_info    0x0000152a      0x168 ../build/obj/src/sas_interrupt.o
+ .debug_info    0x00001692      0x13e ../build/obj/src/sas_startup.o
+ .debug_info    0x000017d0       0x68 ../build/obj/src/sas_uart.o
+ .debug_info    0x00001838       0xc9 ../build/obj/src/sas_wdg.o
+
+.debug_abbrev   0x00000000      0x8e1
+ .debug_abbrev  0x00000000      0x17d ../build/obj/src/main.o
+ .debug_abbrev  0x0000017d       0x29 ../build/obj/src/sas_adc.o
+ .debug_abbrev  0x000001a6      0x1b4 ../build/obj/src/sas_can.o
+ .debug_abbrev  0x0000035a      0x165 ../build/obj/src/sas_clock.o
+ .debug_abbrev  0x000004bf       0x29 ../build/obj/src/sas_dac.o
+ .debug_abbrev  0x000004e8      0x1cb ../build/obj/src/sas_gpio.o
+ .debug_abbrev  0x000006b3       0x74 ../build/obj/src/sas_init.o
+ .debug_abbrev  0x00000727       0x82 ../build/obj/src/sas_interrupt.o
+ .debug_abbrev  0x000007a9       0x9b ../build/obj/src/sas_startup.o
+ .debug_abbrev  0x00000844       0x29 ../build/obj/src/sas_uart.o
+ .debug_abbrev  0x0000086d       0x74 ../build/obj/src/sas_wdg.o
+
+.debug_aranges  0x00000000      0x148
+ .debug_aranges
+                0x00000000       0x20 ../build/obj/src/main.o
+ .debug_aranges
+                0x00000020       0x18 ../build/obj/src/sas_adc.o
+ .debug_aranges
+                0x00000038       0x20 ../build/obj/src/sas_can.o
+ .debug_aranges
+                0x00000058       0x20 ../build/obj/src/sas_clock.o
+ .debug_aranges
+                0x00000078       0x18 ../build/obj/src/sas_dac.o
+ .debug_aranges
+                0x00000090       0x20 ../build/obj/src/sas_gpio.o
+ .debug_aranges
+                0x000000b0       0x20 ../build/obj/src/sas_init.o
+ .debug_aranges
+                0x000000d0       0x20 ../build/obj/src/sas_interrupt.o
+ .debug_aranges
+                0x000000f0       0x20 ../build/obj/src/sas_startup.o
+ .debug_aranges
+                0x00000110       0x18 ../build/obj/src/sas_uart.o
+ .debug_aranges
+                0x00000128       0x20 ../build/obj/src/sas_wdg.o
+
+.debug_macro    0x00000000    0x103ce
+ .debug_macro   0x00000000      0x102 ../build/obj/src/main.o
+ .debug_macro   0x00000102      0xa60 ../build/obj/src/main.o
+ .debug_macro   0x00000b62       0x22 ../build/obj/src/main.o
+ .debug_macro   0x00000b84       0x22 ../build/obj/src/main.o
+ .debug_macro   0x00000ba6       0x8e ../build/obj/src/main.o
+ .debug_macro   0x00000c34       0x51 ../build/obj/src/main.o
+ .debug_macro   0x00000c85      0x103 ../build/obj/src/main.o
+ .debug_macro   0x00000d88       0x6a ../build/obj/src/main.o
+ .debug_macro   0x00000df2      0x1df ../build/obj/src/main.o
+ .debug_macro   0x00000fd1       0x1c ../build/obj/src/main.o
+ .debug_macro   0x00000fed       0x22 ../build/obj/src/main.o
+ .debug_macro   0x0000100f       0xbd ../build/obj/src/main.o
+ .debug_macro   0x000010cc      0xd23 ../build/obj/src/main.o
+ .debug_macro   0x00001def     0xde75 ../build/obj/src/main.o
+ .debug_macro   0x0000fc64       0x22 ../build/obj/src/main.o
+ .debug_macro   0x0000fc86       0x70 ../build/obj/src/sas_adc.o
+ .debug_macro   0x0000fcf6       0xd8 ../build/obj/src/sas_can.o
+ .debug_macro   0x0000fdce       0xc4 ../build/obj/src/sas_clock.o
+ .debug_macro   0x0000fe92       0x70 ../build/obj/src/sas_dac.o
+ .debug_macro   0x0000ff02       0xc4 ../build/obj/src/sas_gpio.o
+ .debug_macro   0x0000ffc6       0xec ../build/obj/src/sas_init.o
+ .debug_macro   0x000100b2       0xf4 ../build/obj/src/sas_interrupt.o
+ .debug_macro   0x000101a6       0xf4 ../build/obj/src/sas_startup.o
+ .debug_macro   0x0001029a       0x70 ../build/obj/src/sas_uart.o
+ .debug_macro   0x0001030a       0xc4 ../build/obj/src/sas_wdg.o
+
+.debug_line     0x00000000     0x1f84
+ .debug_line    0x00000000      0x319 ../build/obj/src/main.o
+ .debug_line    0x00000319      0x1ff ../build/obj/src/sas_adc.o
+ .debug_line    0x00000518      0x30c ../build/obj/src/sas_can.o
+ .debug_line    0x00000824      0x39e ../build/obj/src/sas_clock.o
+ .debug_line    0x00000bc2      0x1ff ../build/obj/src/sas_dac.o
+ .debug_line    0x00000dc1      0x445 ../build/obj/src/sas_gpio.o
+ .debug_line    0x00001206      0x2d2 ../build/obj/src/sas_init.o
+ .debug_line    0x000014d8      0x32c ../build/obj/src/sas_interrupt.o
+ .debug_line    0x00001804      0x2fb ../build/obj/src/sas_startup.o
+ .debug_line    0x00001aff      0x200 ../build/obj/src/sas_uart.o
+ .debug_line    0x00001cff      0x285 ../build/obj/src/sas_wdg.o
+
+.debug_str      0x00000000    0x533a3
+ .debug_str     0x00000000    0x52c93 ../build/obj/src/main.o
+                              0x52ec9 (size before relaxing)
+ .debug_str     0x00052c93       0x17 ../build/obj/src/sas_adc.o
+                               0x3b93 (size before relaxing)
+ .debug_str     0x00052caa      0x303 ../build/obj/src/sas_can.o
+                              0x53093 (size before relaxing)
+ .debug_str     0x00052fad      0x168 ../build/obj/src/sas_clock.o
+                              0x52da5 (size before relaxing)
+ .debug_str     0x00053115       0x17 ../build/obj/src/sas_dac.o
+                               0x3b93 (size before relaxing)
+ .debug_str     0x0005312c       0xaa ../build/obj/src/sas_gpio.o
+                              0x52e0c (size before relaxing)
+ .debug_str     0x000531d6       0x20 ../build/obj/src/sas_init.o
+                              0x52c1b (size before relaxing)
+ .debug_str     0x000531f6       0xc8 ../build/obj/src/sas_interrupt.o
+                              0x52cb1 (size before relaxing)
+ .debug_str     0x000532be       0x9c ../build/obj/src/sas_startup.o
+                              0x52c85 (size before relaxing)
+ .debug_str     0x0005335a       0x18 ../build/obj/src/sas_uart.o
+                               0x3b94 (size before relaxing)
+ .debug_str     0x00053372       0x31 ../build/obj/src/sas_wdg.o
+                              0x52bfc (size before relaxing)
+
+.comment        0x00000000       0x49
+ .comment       0x00000000       0x49 ../build/obj/src/main.o
+                                 0x4a (size before relaxing)
+ .comment       0x00000049       0x4a ../build/obj/src/sas_adc.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_can.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_clock.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_dac.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_gpio.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_init.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_interrupt.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_startup.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_uart.o
+ .comment       0x00000049       0x4a ../build/obj/src/sas_wdg.o
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d ../build/obj/src/main.o
+ .ARM.attributes
+                0x0000002d       0x2d ../build/obj/src/sas_adc.o
+ .ARM.attributes
+                0x0000005a       0x2d ../build/obj/src/sas_can.o
+ .ARM.attributes
+                0x00000087       0x2d ../build/obj/src/sas_clock.o
+ .ARM.attributes
+                0x000000b4       0x2d ../build/obj/src/sas_dac.o
+ .ARM.attributes
+                0x000000e1       0x2d ../build/obj/src/sas_gpio.o
+ .ARM.attributes
+                0x0000010e       0x2d ../build/obj/src/sas_init.o
+ .ARM.attributes
+                0x0000013b       0x2d ../build/obj/src/sas_interrupt.o
+ .ARM.attributes
+                0x00000168       0x2d ../build/obj/src/sas_startup.o
+ .ARM.attributes
+                0x00000195       0x2d ../build/obj/src/sas_uart.o
+ .ARM.attributes
+                0x000001c2       0x2d ../build/obj/src/sas_wdg.o
+
+.debug_frame    0x00000000      0x570
+ .debug_frame   0x00000000       0x7c ../build/obj/src/main.o
+ .debug_frame   0x0000007c      0x13c ../build/obj/src/sas_can.o
+ .debug_frame   0x000001b8       0x7c ../build/obj/src/sas_clock.o
+ .debug_frame   0x00000234      0x16c ../build/obj/src/sas_gpio.o
+ .debug_frame   0x000003a0       0x2c ../build/obj/src/sas_init.o
+ .debug_frame   0x000003cc      0x100 ../build/obj/src/sas_interrupt.o
+ .debug_frame   0x000004cc       0x54 ../build/obj/src/sas_startup.o
+ .debug_frame   0x00000520       0x50 ../build/obj/src/sas_wdg.o

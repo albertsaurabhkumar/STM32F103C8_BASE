@@ -3,7 +3,7 @@
     "configurations": [
         {
             "cwd": "${workspaceFolder}",
-            "executable": "./build/bin/STM32F103C6_APP.elf",
+            "executable": "./build/bin/STM32F103C8_BASE.elf",
             "name": "ST-Debug_BL",
             "request": "launch",
             "type": "cortex-debug",
@@ -11,7 +11,11 @@
             "interface": "swd",
             "runToEntryPoint": "Reset_Handler",
             "showDevDebugOutput": "none",
-            "servertype": "stlink",
+            "servertype": "openocd",
+            "configFiles": [
+                "${workspaceFolder}/tools/openocd/openocd/scripts/interface/stlink.cfg",
+                "${workspaceFolder}/tools/openocd/openocd/scripts/target/stm32f1x.cfg"
+            ],
             "svdFile": "${workspaceFolder}/tools/STM32F103.svd"
         }
     ]

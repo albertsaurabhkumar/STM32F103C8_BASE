@@ -1,16 +1,16 @@
 #############################################
-##  Processor: S32K144
+##  Processor: STM32F103
 ##  Author: Saurabh Kumar
 ##  GCC Version: 12.3
 ##  
 ##	$(error Files is [${LIBDIRC}])
-##  Makefile for S32K144 Bootloader
+##  Makefile for STM32F103 Bootloader
 #############################################
 
 #RootDirectory with the Project paths
 ROOT = ./..
 SRC_DIR = $(ROOT)/app
-INC_DIR = $(ROOT)/app/inc $(ROOT)/app/libopencm3/include
+INC_DIR = $(ROOT)/app/inc
 
 BIN_DIR = $(ROOT)/build/bin
 OBJ_DIR = $(ROOT)/build/obj
@@ -28,9 +28,9 @@ OBJDUMP = $(CC_BIN)/arm-none-eabi-objdump
 OBJCOPY = $(CC_BIN)/arm-none-eabi-objcopy
 
 #Project Name
-PROJECT = STM32F103C6_APP
+PROJECT = STM32F103C8_BASE
 
-SRC = $(wildcard $(SRC_DIR)/staticSrc/*.c $(SRC_DIR)/userSrc/*.c)
+SRC = $(wildcard $(SRC_DIR)/src/*.c)
 INC = $(wildcard $(INC_DIR)/*.h)
 OBJ = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC))
 
@@ -39,7 +39,7 @@ OBJ = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC))
 #Compiler and Linker flags
 
 CFLAGS = -c -DSTM32F1 -mthumb -g3 -mcpu=cortex-m3 -Wall -std=gnu11 $(addprefix -I ,$(INC_DIR)) -ggdb
-LDFLAGS = -T STM32F103C6_APP.ld -g3 -ggdb -Wl,-Map=$(BIN_DIR)/STM32F103C6_APP.map -nostdlib -mcpu=cortex-m3 -Wall -Werror -Wshadow $(addprefix -L ,$(CC_LIB))
+LDFLAGS = -T STM32F103C8_BASE.ld -O0 -g3 -ggdb -Wl,-Map=$(BIN_DIR)/STM32F103C8_BASE.map -nostdlib -mcpu=cortex-m3 -Wall -Werror -Wshadow $(addprefix -L ,$(CC_LIB))
 
 #Target name with path
 TARGET = $(ROOT)/build/bin/$(PROJECT)
@@ -69,7 +69,7 @@ objcopytobin:
 
 clean:
 	@echo Removing build files
-	@rm -rf $(BIN_DIR)/* $(OBJ_DIR)/userSrc/*.o
+	@rm -rf $(BIN_DIR)/* $(OBJ_DIR)/src/*.o
 	@echo Done...
 
 .PHONY: all clean

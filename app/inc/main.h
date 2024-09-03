@@ -1,11 +1,5 @@
-#include "stdint.h"
-#include "stdbool.h"
-#include <libopencm3/cm3/scb.h>
-#include <libopencm3/stm32/rcc.h>
-#include <libopencm3/stm32/gpio.h>
-#include <libopencm3/stm32/flash.h>
-#include <libopencm3/stm32/can.h>
-#include <libopencm3/stm32/usart.h>
+#include "sas_common.h"
+#include "sas_init.h"
 
 /* volatile uint32_t* MSR= (uint32_t*)(CAN1+0x004);
 volatile uint32_t* ESR= (uint32_t*)(CAN1+0x018);
@@ -33,27 +27,14 @@ volatile uint32_t* AFIORE= (uint32_t*)(AFIO_BASE+0x004); */
   // flash_lock();
 
 typedef enum {
-  SendMsg,
-  WaitforAck,
-  ReceiveMsg,
-  SendAck,
-  BlinkLed
+  DownloadReq,
+  GetData,
+  TransferDone,
+  Ack,
+  ReadStatus,
+  EraseApp,
+  init,
 }state_machin_t;
-
-typedef enum {
-  retransPkt = 0x32,
-  dataPkt = 0x21,
-  ackPkt = 0x55
-} Pktype_t;
-
-typedef struct {
-  Pktype_t pktype;
-  uint8_t data[8];
-  uint8_t crc;
-} Pkt_t;
-
-Pkt_t ReadPkt();
-bool writePkt(Pkt_t *pkt);
 
 int main(void);
 void uartSetup();
