@@ -99,6 +99,7 @@ void JumpToApp() {
 // }
 
 int main(void) {
+  sas_canFrame* canRcvdFrame;
   // __asm__ volatile ("CPSIE I\n"); /* Enable the GLOBAL interrupts */
   // DwReqPkt_t DrequestPkt;
   // ReqRespPkt_t tempPkt;
@@ -132,7 +133,11 @@ int main(void) {
     } else {
       write_pin(SAS_PORTC, SAS_PIN13,HIGH);
     }
-    for(uint32_t i=0;i<300000;i++);
+  
+    canRcvdFrame = sas_canRead();
+    sas_canWrite(canRcvdFrame);
+    
+    for(uint32_t i=0;i<30000;i++);
   }
 
     return 0;

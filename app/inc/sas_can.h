@@ -16,10 +16,40 @@ typedef enum {
 } sas_can_err_t;
 
 typedef enum {
+  BAUD_250Kbps,
+  BAUD_500Kbps
+} CAN_Baud_t;
+
+typedef enum {
+ TQ_1 =1,
+ TQ_2,
+ TQ_3,
+ TQ_4,
+ TQ_5,
+ TQ_6,
+ TQ_7,
+ TQ_8,
+ TQ_9,
+ TQ_10,
+ TQ_11,
+ TQ_12,
+ TQ_13,
+ TQ_14,
+ TQ_15,
+ TQ_16,
+} timeQuanta;
+
+typedef enum {
   SAS_CAN_SILENT,
   SAS_CAN_LBK,
   SAS_CAN_NORMAL
 } sas_can_mode;
+
+typedef enum {
+  SAS_STOP,
+  SAS_START,
+  SAS_RESET
+} sas_cmd;
 
 typedef struct {
   uint8_t rec;
@@ -49,11 +79,10 @@ typedef struct sas_canFrame {
 
 sas_retype sas_can_init(void);
 sas_retype sas_can_fiter_conf();
-sas_retype sas_can_config();
-sas_retype sas_can_startStop();
+sas_retype sas_can_startStop(sas_cmd);
 sas_retype sas_set_can_mode(sas_can_mode);
 sas_retype sas_get_can_status(sas_can_status* );
 sas_retype sas_canWrite(sas_canFrame* );
-sas_retype sas_canRead(sas_canFrame* );
+sas_canFrame* sas_canRead();
 
 #endif

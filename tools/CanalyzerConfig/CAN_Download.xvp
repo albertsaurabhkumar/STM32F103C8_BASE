@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="CAN_Download">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text 1">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">206, 29</Property>
+      <Property Name="Location">22, 13</Property>
+      <Property Name="BackColor">White</Property>
+      <Property Name="Font">Microsoft Sans Serif, 18pt, style=Bold</Property>
+      <Property Name="Text">Download Binary</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl1" Children="Controls" ControlName="CAPL Output View 1">
+      <Property Name="Name">CAPLOutputViewControl1</Property>
+      <Property Name="Size">482, 249</Property>
+      <Property Name="Location">22, 164</Property>
+      <Property Name="BoxBackgroundColor">White</Property>
+      <Property Name="TabIndex">5</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="Downlaod">
+      <Property Name="Name">ButtonControl1</Property>
+      <Property Name="Size">96, 23</Property>
+      <Property Name="Location">409, 117</Property>
+      <Property Name="Text">Download</Property>
+      <Property Name="SymbolConfiguration">8;16;DownloadBinary;;;StartDownload;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ProgressBarControl, Vector.CANalyzer.Panels.CommonControls, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null" Name="ProgressBarControl1" Children="Controls" ControlName="progressBar">
+      <Property Name="Name">ProgressBarControl1</Property>
+      <Property Name="Size">368, 23</Property>
+      <Property Name="Location">22, 117</Property>
+      <Property Name="OriginValue">0</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="ValueSize">30, 22</Property>
+      <Property Name="SymbolConfiguration">8;16;DownloadBinary;;;ProgessBar;1;;;-1;;;;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PathControl, Vector.CANalyzer.Panels.CommonControls, Version=16.6.2.0, Culture=neutral, PublicKeyToken=null" Name="PathControl1" Children="Controls" ControlName="binPath">
+      <Property Name="Name">PathControl1</Property>
+      <Property Name="Size">482, 23</Property>
+      <Property Name="Location">22, 75</Property>
+      <Property Name="BorderStyle">FixedSingle</Property>
+      <Property Name="SymbolConfiguration">8;16;DownloadBinary;;;FilePathVar;4;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">1</Property>
+      <Property Name="TabStopActive">False</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">530, 426</Property>
+    <Property Name="BackColor">LightGray</Property>
+    <Property Name="BorderStyle">FixedSingle</Property>
+  </Object>
+</Panel>

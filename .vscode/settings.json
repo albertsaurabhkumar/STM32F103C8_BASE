@@ -33,7 +33,8 @@
         "usart_common_f124.h": "c",
         "usart_common_v2.h": "c",
         "usart_common_all.h": "c",
-        "sas_gpio.h": "c"
+        "sas_gpio.h": "c",
+        "sas_can.h": "c"
     },
     "cortex-debug.liveWatchRefreshRate": 250,
     "cortex-debug.openocdPath.windows": "${workspaceFolder}/tools/openocd/bin/openocd.exe",

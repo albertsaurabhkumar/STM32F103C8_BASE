@@ -40,40 +40,18 @@ sas_retype sas_clock_init() {
 }
 
 sas_retype sas_clock_set(const sas_clock* clock) {
-    uint32_t Temp_Reg = 0;
 
-    /* Filling and setting the configuration register for RCC */
+    RCC->CFGR |= (clock->sas_ahb_prescaler)|(clock->sas_apb1_prescaler)
+    |(clock->sas_apb2_prescaler)|(clock->sas_adc_prescaler)|(clock->sas_pllmul)|(clock->sas_pllscr);
     
-    Temp_Reg = (clock->sas_ahb_prescaler)|(~clock->sas_ahb_prescaler & Temp_Reg);
-
-    Temp_Reg = (clock->sas_apb1_prescaler)|(~clock->sas_apb1_prescaler & Temp_Reg);
-
-    Temp_Reg = (clock->sas_apb2_prescaler)|(~clock->sas_apb2_prescaler & Temp_Reg);
-    
-    Temp_Reg = (clock->sas_adc_prescaler)|(~clock->sas_adc_prescaler & Temp_Reg);
-
-    Temp_Reg = (clock->sas_pllmul)|(~clock->sas_pllmul & Temp_Reg);
-
-    Temp_Reg = (clock->sas_pllscr)|(~clock->sas_pllscr & Temp_Reg);
-
-    RCC->CFGR = (Temp_Reg)|(~Temp_Reg & RCC->CFGR);
-
+    /* Check for PLL and ON if it not ON */
     if(!(RCC->CR & RCC_CR_PLLON)) {
         RCC->CR = RCC->CR | RCC_CR_PLLON;
     }
-
     /* Check PLL is ready or not */
     while(!(RCC->CR & RCC_CR_PLLRDY));
 
-    // /* Filling and setting the configuration register 2 for RCC */
-
-    // Temp_Reg = (clock->sas_prediv1)|(~clock->sas_pllscr & Temp_Reg);
-
-    // Temp_Reg = (clock->sas_prediv1scr)|(~clock->sas_pllscr & Temp_Reg);
-
-    // RCC->CFGR = (Temp_Reg)|(~Temp_Reg & RCC->CFGR);
-    
-    // RCC->CFGR = (RCC_CFGR_SW_PLL)|(~RCC_CFGR_SW_PLL & RCC->CFGR);
+    RCC->CFGR |= (RCC_CFGR_SW_PLL);
     
     return SAS_OK;
 }
