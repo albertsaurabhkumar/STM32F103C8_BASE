@@ -23,6 +23,8 @@
 
 /************************ Include Header Files **************************/
 #include "main.h"
+#include <FreeRTOS.h>
+#include <task.h>
 
 /************************ Start the Global Variables **************************/
 #define APP_ADD 0x08006004
@@ -59,6 +61,38 @@ void JumpToApp() {
   //SCB_VTOR = (uint32_t)(VectorAdd);
   __set_MSP(NEW_MSP);
   jmpFn();
+}
+
+/****************************************************************/
+void *
+memcpy (void *dest, const void *src, unsigned n)
+{
+	unsigned char *dbp = (unsigned char *)dest;
+	unsigned char *sbp = (unsigned char *)src;
+
+	if ((dest != NULL) && (src != NULL) && (n > 0))
+	{
+      while (n--)
+			*dbp++ = *sbp++;
+	}
+	return dest;
+}
+
+/****************************************************************/
+void *
+memset (void *s, int c, unsigned n)
+{
+	/* Not optimized, but very portable */
+	unsigned char *sp = (unsigned char *)s;
+
+	if ((s != NULL) && (n > 0))
+	{
+		while (n--)
+		{
+			*sp++ = (unsigned char)c;
+		}
+	}
+	return s;
 }
 
 // void canInit() {
@@ -143,6 +177,17 @@ int main(void) {
     return 0;
 }
 
+void vApplicationStackOverflowHook( TaskHandle_t pxTask, char *pcTaskName )
+{
+	/* This function will get called if a task overflows its stack.   If the
+	parameters are corrupt then inspect pxCurrentTCB to find which was the
+	offending task. */
+
+	( void ) pxTask;
+	( void ) pcTaskName;
+
+	for( ;; );
+}
 
 //if((CAN_RF0R(CAN1)&CAN_RF0R_FMP0_MASK)||(CAN_RF1R(CAN1)&CAN_RF0R_FMP0_MASK)) 
 //{        

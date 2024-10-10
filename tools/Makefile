@@ -4,7 +4,7 @@
 ##  GCC Version: 12.3
 ##  
 ##	$(error Files is [${LIBDIRC}])
-##  Makefile for STM32F103 Bootloader
+##  Makefile for STM32F103 Bootloaderobjcopytohex objcopytobin objsize
 #############################################
 
 #RootDirectory with the Project paths
@@ -30,22 +30,22 @@ OBJCOPY = $(CC_BIN)/arm-none-eabi-objcopy
 #Project Name
 PROJECT = STM32F103C8_BASE
 
-SRC = $(wildcard $(SRC_DIR)/src/*.c)
-INC = $(wildcard $(INC_DIR)/*.h)
+SRC = $(wildcard $(SRC_DIR)/src/*.c) $(wildcard $(SRC_DIR)/openSrcLibs/source/*.c)
+INC = $(wildcard $(INC_DIR)/*.h) $(wildcard $(ROOT)/app/openSrcLibs/include/*.h)
 OBJ = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC))
 
-#$(error Files is [${SRC}])
+# $(error Files is [${OBJ}])
 
 #Compiler and Linker flags
 
-CFLAGS = -c -DSTM32F1 -mthumb -g3 -mcpu=cortex-m3 -Wall -std=gnu11 $(addprefix -I ,$(INC_DIR)) -ggdb
+CFLAGS = -c -DSTM32F1 -mthumb -g3 -mcpu=cortex-m3 -Wall -std=gnu11 $(addprefix -I ,$(INC_DIR)) $(addprefix -I ,$(ROOT)/app/openSrcLibs/include) -ggdb
 LDFLAGS = -T STM32F103C8_BASE.ld -O0 -g3 -ggdb -Wl,-Map=$(BIN_DIR)/STM32F103C8_BASE.map -nostdlib -mcpu=cortex-m3 -Wall -Werror -Wshadow $(addprefix -L ,$(CC_LIB))
 
 #Target name with path
 TARGET = $(ROOT)/build/bin/$(PROJECT)
 
 #Makefile rules to build the project
-all: $(TARGET).elf objcopytohex objcopytobin objsize
+all: $(TARGET).elf
 
 $(TARGET).elf:$(OBJ)
 	@echo Linking: $@
@@ -69,7 +69,7 @@ objcopytobin:
 
 clean:
 	@echo Removing build files
-	@rm -rf $(BIN_DIR)/* $(OBJ_DIR)/src/*.o
+	@rm -rf $(BIN_DIR)/* $(OBJ_DIR)/*/*.o
 	@echo Done...
 
 .PHONY: all clean
