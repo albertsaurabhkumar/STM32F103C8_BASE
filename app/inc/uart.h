@@ -26,6 +26,7 @@ typedef struct {
   uint8_t crc;
 } ReqRespPkt_t;
 
+
 DataPkt_t ReadDataPkt();
 ReqRespPkt_t ReadReqRespPkt();
 DwReqPkt_t ReadDwReqPkt();
