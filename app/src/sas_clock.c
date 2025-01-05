@@ -67,6 +67,8 @@ sas_retype sas_peri_clock_enable(sas_periph_t peri) {
         RCC->APB2ENR =  (RCC_APB2ENR_IOPAEN) |(~ RCC_APB2ENR_IOPAEN & RCC->APB2ENR);
     } else if(peri == SAS_GPIOC_EN){
         RCC->APB2ENR =  (RCC_APB2ENR_IOPCEN) |(~ RCC_APB2ENR_IOPCEN & RCC->APB2ENR);
+    } else if(peri == SAS_SPI_EN) {
+        RCC->APB2ENR =  (RCC_APB2ENR_SPI1EN) |(~ RCC_APB2ENR_SPI1EN & RCC->APB2ENR);
     } else {
         /* TODO: Implement the other Peripherals */
     }

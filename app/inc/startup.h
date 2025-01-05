@@ -1,3 +1,6 @@
+#ifndef STARTUP_H
+#define STARTUP_H
+
 #include "main.h"
 
 extern uint32_t _intvec_start_;
@@ -10,3 +13,5 @@ extern uint32_t _sdata_ram;
 
 void initDataNbss();
 void Reset_Handler();
+
+#endif

@@ -1,4 +1,6 @@
 #include "startup.h"
+#include "FreeRTOSConfig.h"
+
 /**************************************************/
 /*             System Interrupt Handling          */
 /**************************************************/
@@ -21,19 +23,24 @@ void BusFault_Handler(void) {
 void UsageFault_Handler(void) {
     while(1); /* Never returns from here */
 }
-void SVC_Handler(void) {
-    while(1); /* Never returns from here */
-}  
+// void SVC_Handler(void) {
+//    /* Never returns from here */
+// }  
 
 void DebugMon_Handler(void) {
-    while(1); /* Never returns from here */
+     while(1); /* Never returns from here */
 }  
-void PendSV_Handler(void) {
-    while(1); /* Never returns from here */
-}
-void SysTick_Handler(void) {
-    while(1); /* Never returns from here */
-}
+// void PendSV_Handler(void) {
+//    /* Never returns from here */
+// }
+// void SysTick_Handler(void) {
+//     /* Never returns from here */
+// }
+
+
+void  vPortSVCHandler(void) __attribute__ ((weak));   
+void  xPortPendSVHandler(void) __attribute__ ((weak));   
+void  xPortSysTickHandler(void) __attribute__ ((weak));    
 
 void  WWDG_IRQHandler(void) __attribute__ ((weak, alias("DefaultHandler")));   
 void  PVD_IRQHandler(void) __attribute__ ((weak, alias("DefaultHandler")));   
@@ -88,11 +95,11 @@ const uint32_t vectorTable[] __attribute__ ((section (".intvec"))) = {
      (uint32_t) 0 ,                                                                 /* Reserved*/
      (uint32_t) 0 ,                                                                 /* Reserved*/
      (uint32_t) 0 ,                                                                 /* Reserved*/
-     (uint32_t) SVC_Handler,                                          /* SVCall Handler*/
+     (uint32_t) vPortSVCHandler,                                          /* SVCall Handler*/
      (uint32_t) DebugMon_Handler,                                     /* Debug Monitor Handler*/
      (uint32_t) 0 ,                                                       /* Reserved*/
-     (uint32_t) PendSV_Handler,                                       /* PendSV Handler*/
-     (uint32_t) SysTick_Handler,                                      /* SysTick Handler*/
+     (uint32_t) xPortPendSVHandler,                                       /* PendSV Handler*/
+     (uint32_t) xPortSysTickHandler,                                      /* SysTick Handler*/
                                           /* External Interrupts*/
 
      (uint32_t) WWDG_IRQHandler,

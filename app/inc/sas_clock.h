@@ -30,6 +30,7 @@ typedef struct sas_clock {
 
 typedef enum {
     SAS_ADC_EN,
+    SAS_SPI_EN,
     SAS_CAN_EN,
     SAS_GPIOA_EN,
     SAS_GPIOB_EN,

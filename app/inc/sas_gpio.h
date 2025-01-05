@@ -48,7 +48,7 @@ typedef enum sas_config {
     OUT_OD = 0x6,
     OUT_PUPL =0x2,
     AF_OD = 0x0D,
-    AF_PUPL = 0xA
+    AF_PUPL = 0xB
 }sas_config;
 
 typedef struct GPIO_t {

@@ -23,17 +23,21 @@
 
 /************************ Include Header Files **************************/
 #include "main.h"
-#include <FreeRTOS.h>
-#include <task.h>
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
 
 /************************ Start the Global Variables **************************/
 #define APP_ADD 0x08006004
 #define VectorAdd 0x08006000
 #define NEW_MSP 0x20002800
 
+void BlinkLed(void *);
+void WaitTask(void *);
+
 typedef void (*voidFunc)(void);
 volatile uint32_t BootAppFlag __attribute__ ((section (".BootAppFlags")));
-volatile uint32_t dlyCnt;
+volatile uint8_t status;
 volatile uint32_t counter;
 uint32_t timeoutVar;
 uint16_t count=0;
@@ -45,13 +49,7 @@ state_machin_t currstate;
 
 /************************ End the Global Variables **************************/
 
-
-void delay(uint32_t a) {
-  while(a>0){
-    a--;
-    dlyCnt=a;
-  }
-}
+TaskHandle_t BlinkTaskHandle;
 
 void JumpToApp() {
   uint32_t* jumpAddress = (uint32_t*)(APP_ADD);
@@ -64,13 +62,12 @@ void JumpToApp() {
 }
 
 /****************************************************************/
-void *
-memcpy (void *dest, const void *src, unsigned n)
+void *memcpy (void *dest, const void *src, unsigned n)
 {
 	unsigned char *dbp = (unsigned char *)dest;
 	unsigned char *sbp = (unsigned char *)src;
 
-	if ((dest != NULL) && (src != NULL) && (n > 0))
+	if (/* (dest != NULL) && (src != NULL) &&  */(n > 0))
 	{
       while (n--)
 			*dbp++ = *sbp++;
@@ -79,13 +76,12 @@ memcpy (void *dest, const void *src, unsigned n)
 }
 
 /****************************************************************/
-void *
-memset (void *s, int c, unsigned n)
+void *memset (void *s, int c, unsigned n)
 {
 	/* Not optimized, but very portable */
 	unsigned char *sp = (unsigned char *)s;
 
-	if ((s != NULL) && (n > 0))
+	if (/* (s != NULL) && */ (n > 0))
 	{
 		while (n--)
 		{
@@ -133,7 +129,27 @@ memset (void *s, int c, unsigned n)
 // }
 
 int main(void) {
+  SCB->VTOR = 0x08000000;
   sas_canFrame* canRcvdFrame;
+  
+  sysinit();
+  sas_spiInit();
+
+  sas_peri_clock_enable(SAS_GPIOC_EN);
+  sas_peri_clock_enable(SAS_GPIOA_EN);
+
+  config_gpio_pin(SAS_PORTC, SAS_PIN13, OUT_PUPL);
+
+  config_gpio_pin(SAS_PORTA, SAS_PIN4, AF_PUPL);
+  config_gpio_pin(SAS_PORTA, SAS_PIN5, AF_PUPL);
+  config_gpio_pin(SAS_PORTA, SAS_PIN6, AF_PUPL);
+  config_gpio_pin(SAS_PORTA, SAS_PIN7, AF_PUPL);
+
+  xTaskCreate( BlinkLed, "Blink", configMINIMAL_STACK_SIZE, (void*)2, tskIDLE_PRIORITY, &BlinkTaskHandle);
+
+	/* Start the scheduler. */
+	vTaskStartScheduler();
+
   // __asm__ volatile ("CPSIE I\n"); /* Enable the GLOBAL interrupts */
   // DwReqPkt_t DrequestPkt;
   // ReqRespPkt_t tempPkt;
@@ -156,25 +172,45 @@ int main(void) {
   //   erase_application(APP_ADD);
   //   BootAppFlag = 0xA5A5A5A5;
   // }
-  sysinit();
-  sas_peri_clock_enable(SAS_GPIOC_EN);
-  config_gpio_pin(SAS_PORTC, SAS_PIN13, OUT_PUPL);
+
 
   while(1)
   {
-    if(read_pin(SAS_PORTC, SAS_PIN13) == HIGH) {
-      write_pin(SAS_PORTC, SAS_PIN13,LOW);
-    } else {
-      write_pin(SAS_PORTC, SAS_PIN13,HIGH);
-    }
-  
     canRcvdFrame = sas_canRead();
     sas_canWrite(canRcvdFrame);
+  }
+    return 0;
+}
+
+void BlinkLed(void * param) {
+
+  // xTaskNotifyWait(0x00000001,0x00000001,NULL,portMAX_DELAY);
+
+  uint8_t rcvddata;
+
+  while(1) {
     
-    for(uint32_t i=0;i<30000;i++);
+  spi_writeByte(0x20);
+
+  if(read_pin(SAS_PORTC, SAS_PIN13) == HIGH) {
+    write_pin(SAS_PORTC, SAS_PIN13,LOW);
+  } else {
+    write_pin(SAS_PORTC, SAS_PIN13,HIGH);
   }
 
-    return 0;
+  rcvddata = spi_readByte();
+
+  vTaskDelay(100);
+  }
+}
+
+void WaitTask(void * param) {
+
+  while(1) {
+    // xTaskNotify( BlinkLed,0x00000001,1);
+  }
+  
+  vTaskDelay(1000);
 }
 
 void vApplicationStackOverflowHook( TaskHandle_t pxTask, char *pcTaskName )
@@ -185,6 +221,16 @@ void vApplicationStackOverflowHook( TaskHandle_t pxTask, char *pcTaskName )
 
 	( void ) pxTask;
 	( void ) pcTaskName;
+
+	for( ;; );
+}
+
+/*-----------------------------------------------------------*/
+
+void assert_failed( unsigned char *pucFile, unsigned long ulLine )
+{
+	( void ) pucFile;
+	( void ) ulLine;
 
 	for( ;; );
 }

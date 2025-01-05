@@ -1,3 +1,6 @@
+#ifndef UART_H
+#define UART_H
+
 #include "stdint.h"
 #include "stdbool.h"
 
@@ -32,3 +35,4 @@ DwReqPkt_t ReadDwReqPkt();
 bool writeDataPkt(DataPkt_t *pkt);
 bool writeReqRespPkt(ReqRespPkt_t *pkt);
 
+#endif

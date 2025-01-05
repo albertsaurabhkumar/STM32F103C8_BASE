@@ -1,5 +1,10 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include "sas_common.h"
 #include "sas_init.h"
+#include "sas_spi.h"
+#include "mcp2515.h"
 
 /* volatile uint32_t* MSR= (uint32_t*)(CAN1+0x004);
 volatile uint32_t* ESR= (uint32_t*)(CAN1+0x018);
@@ -38,3 +43,5 @@ typedef enum {
 
 int main(void);
 void uartSetup();
+
+#endif

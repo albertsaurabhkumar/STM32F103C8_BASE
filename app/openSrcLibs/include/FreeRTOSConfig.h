@@ -51,15 +51,18 @@
 #define configUSE_TRACE_FACILITY	1
 #define configUSE_16_BIT_TICKS		0
 #define configIDLE_SHOULD_YIELD		1
+#define configRECORD_STACK_HIGH_ADDRESS 		1
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS
+#define portGET_RUN_TIME_COUNTER_VALUE
 
 
 #define configUSE_MUTEXES				1
 #define configUSE_COUNTING_SEMAPHORES 	1
 #define configUSE_ALTERNATIVE_API 		0
-#define configCHECK_FOR_STACK_OVERFLOW	2
+#define configCHECK_FOR_STACK_OVERFLOW	1
 #define configUSE_RECURSIVE_MUTEXES		1
 #define configQUEUE_REGISTRY_SIZE		0
-#define configGENERATE_RUN_TIME_STATS	0
+#define configGENERATE_RUN_TIME_STATS	1
 
 /* Set the following definitions to 1 to include the API function, or zero
 to exclude the API function. */
@@ -95,4 +98,3 @@ NVIC value of 255. */
 #define configCOM1_TX_BUFFER_LENGTH		128
 
 #endif /* FREERTOS_CONFIG_H */
-
